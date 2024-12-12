@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Rival Más Débil</title>
+    <title>El MATEcito más débil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
-        <h1>El Rival Más Débil</h1>
+        <h1>El MATEcito <br> más débil</h1>
 
         <!-- Escalera de dinero -->
         <div class="money-ladder">
@@ -21,14 +21,18 @@
         </div>
 
         <!-- Total acumulado -->
-        <div class="money-total">Total Acumulado: $0</div>
+         <div class="money-total">Total Ronda: $0</div>
+         <div class="grand-total">Total del juego: $0</div>
 
         <!-- Acciones -->
         <div class="controls">
             <button onclick="markCorrect()">Respuesta Correcta</button>
             <button onclick="markIncorrect()">Respuesta Incorrecta</button>
-            <button onclick="bankAmount()">Acumular</button>            
-            <button class="reset" onclick="resetGame()">Reiniciar</button>
+            <button onclick="bankAmount()">Banco</button>            
+            <button class="reset" onclick="resetRound()">Ronda Nueva</button>
+        </div>
+        <div class="controls">
+            <button onclick="resetGame()">Reiniciar Juego</button>
         </div>
     </div>
     <script src="main.js"></script>

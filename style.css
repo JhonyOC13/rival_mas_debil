@@ -84,6 +84,8 @@ body {
 
 @media (max-width: 480px) {
     .controls button {
+        font-size: 12px;
+        font-weight: bold;
         padding: 8px 7px;
     }
 }
