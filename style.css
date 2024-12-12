@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    background-color: #8c8a89;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.money-ladder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.money-step {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #8c8a89;
+    font-weight: bold;
+}
+
+.money-step.active {
+    background-color: #cd6847;
+}
+
+.money-total {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #cd6847;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #80412c;
+}
+
+.controls .reset {
+    background-color: #121212;
+}
+
+.controls .reset:hover {
+    background-color: #5e5e5e;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rival Más Débil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>El Rival Más Débil</h1>
+
+        <!-- Escalera de dinero -->
+        <div class="money-ladder">
+            <div class="money-step" data-value="500">$500</div>
+            <div class="money-step" data-value="400">$400</div>            
+            <div class="money-step" data-value="300">$300</div>
+            <div class="money-step" data-value="200">$200</div>
+            <div class="money-step" data-value="100">$100</div>
+            <div class="money-step" data-value="50">$50</div>
+        </div>
+
+        <!-- Total acumulado -->
+        <div class="money-total">Total Acumulado: $0</div>
+
+        <!-- Acciones -->
+        <div class="controls">
+            <button onclick="markCorrect()">Respuesta Correcta</button>
+            <button onclick="markIncorrect()">Respuesta Incorrecta</button>
+            <button onclick="bankAmount()">Acumular</button>            
+            <button class="reset" onclick="resetGame()">Reiniciar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
